@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Integritetspolicy – Bibel 2015</title>
+    <title>Integritetspolicy – Bibel '15</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
@@ -46,6 +46,14 @@
         li { margin-bottom: 0.4rem; }
         a { color: #8B6914; text-decoration: none; }
         a:hover { text-decoration: underline; }
+        .notice {
+            background: #fdf8ee;
+            border: 1px solid #e8d8a0;
+            border-radius: 8px;
+            padding: 1rem 1.2rem;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
         footer {
             margin-top: 2.5rem;
             font-size: 0.8rem;
@@ -58,50 +66,75 @@
 <div class="container">
 
     <h1>Integritetspolicy</h1>
-    <p class="subtitle">Bibel 2015 &middot; KJS Software &middot; Senast uppdaterad: 2026-05-21</p>
+    <p class="subtitle">Bibel '15 &middot; KJS Software &middot; Senast uppdaterad: 2026-05-22</p>
 
     <h2>Sammanfattning</h2>
     <p>
-        Bibel 2015 samlar inte in, lagrar eller delar personuppgifter med tredje part.
-        All data du skapar i appen – markeringar, reflektioner och inställningar –
-        lagras enbart lokalt på din enhet.
+        Bibel '15 samlar inte in någon data för våra egna ändamål och delar ingen information
+        med tredje part för reklam eller analys. All data du skapar i appen – markeringar,
+        reflektioner och inställningar – lagras lokalt på din enhet.
+    </p>
+    <p>
+        Om du väljer att aktivera Google Drive-backup kommunicerar appen med Googles tjänster
+        för att spara och återställa din data. Det är helt valfritt och inget sker utan att
+        du aktivt väljer det.
     </p>
 
-    <h2>Vilken data samlas in?</h2>
-    <p>Vi samlar <strong>inte</strong> in någon data. Appen skickar ingen information till våra servrar eller till tredje part.</p>
-    <p>Följande data lagras <em>lokalt på din enhet</em> och lämnar den aldrig utan ditt aktiva medgivande:</p>
+    <h2>Vilken data lagras lokalt?</h2>
+    <p>Följande data lagras <em>enbart på din enhet</em> och lämnar den aldrig om du inte aktiverar Drive-backup:</p>
     <ul>
         <li>Textmarkeringar (färg, fetstil, understrykning) kopplade till bibelverser</li>
         <li>Personliga reflektioner och anteckningar</li>
-        <li>Läsinställningar (textstorlek, tema, stör-ej-inställning)</li>
+        <li>Läsinställningar (textstorlek, tema m.m.)</li>
         <li>Inbundlad bibeltext (Svenska Folkbibeln 2015) i appens lokala databas</li>
     </ul>
 
-    <h2>Nätverksanrop</h2>
+    <h2>Bibeltext och nätverksanrop</h2>
     <p>
-        Appen gör <strong>inga nätverksanrop</strong>. All bibeltext är inbyggd direkt i appen
-        och läses från en lokal databas på enheten. Ingen data skickas till externa servrar.
+        All bibeltext är inbyggd direkt i appen och läses från en lokal databas på enheten.
+        Appen gör <strong>inga nätverksanrop för bibeltext</strong> – den fungerar helt
+        utan internetanslutning för läsning och annotering.
     </p>
 
-    <h2>Säkerhetskopiering</h2>
+    <h2>Google Drive-backup (valfritt)</h2>
+    <div class="notice">
+        Den här funktionen är helt valfri. Inga data skickas till Google Drive om du inte
+        aktivt väljer att slå på den under Inställningar.
+    </div>
     <p>
-        Android Auto Backup (Google) kan automatiskt säkerhetskopiera appens databas till
-        ditt Google-konto om du har aktiverat det i telefonens inställningar. Detta sköts
-        av Android-operativsystemet enligt Googles egna
+        Om du aktiverar Drive-backup sker följande:
+    </p>
+    <ul>
+        <li>Du loggar in med ditt Google-konto via Googles egna inloggningsdialog.</li>
+        <li>Appen sparar en krypterad JSON-fil med dina markeringar och anteckningar i
+            din privata app-mapp på Google Drive (<em>appDataFolder</em>). Den mappen är
+            inte synlig i Drive-gränssnittet och kan inte nås av andra appar.</li>
+        <li>Din e-postadress används enbart för att identifiera ditt Google-konto och
+            visas i appens inställningar. Den skickas aldrig till KJS Softwares servrar.</li>
+        <li>Backup sker antingen manuellt på din begäran eller automatiskt enligt det
+            schema du ställer in (dagligen, veckovis eller månadsvis).</li>
+    </ul>
+    <p>
+        All kommunikation med Google Drive hanteras av Googles officiella API-bibliotek och
+        sker krypterat (HTTPS). Googles hantering av din data regleras av deras
         <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">integritetspolicy</a>.
     </p>
     <p>
-        Via appens inställningar kan du även exportera en lokal JSON-backup och importera den
-        igen. Den filen skickas aldrig automatiskt någonstans – du väljer själv var den sparas.
+        Du kan när som helst logga ut från Google-kontot i appens inställningar, vilket
+        raderar alla lokalt cachade autentiseringsuppgifter.
     </p>
 
     <h2>Tredjepartstjänster</h2>
-    <p>Appen använder inga reklam-SDK:er, analysverktyg eller spårningskod.</p>
+    <p>
+        Appen använder inga reklam-SDK:er, analysverktyg eller spårningskod.
+        Den enda tredjepartstjänst som används är Google Drive, och enbart om du aktiverar backup.
+    </p>
 
     <h2>Barnens integritet</h2>
     <p>
-        Appen samlar inte in data från någon användare, oavsett ålder.
-        Den är därför lämplig för användare i alla åldrar.
+        Appen samlar inte in data från användare för egna ändamål, oavsett ålder.
+        Google Drive-funktionen kräver ett Google-konto och lyder under Googles egna
+        åldersgränser för kontoanvändning.
     </p>
 
     <h2>Ändringar i denna policy</h2>
