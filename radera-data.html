@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radera konto och data – Bibel '15</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #f8f7f2;
+            color: #2c2c2c;
+            line-height: 1.7;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 2.5rem 2rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        h1 {
+            font-size: 1.75rem;
+            color: #1a1a1a;
+            margin-bottom: 0.25rem;
+        }
+        .subtitle {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+        h2 {
+            font-size: 1.1rem;
+            color: #1a1a1a;
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+            border-left: 3px solid #8B6914;
+            padding-left: 0.6rem;
+        }
+        p { margin-bottom: 1rem; }
+        ol, ul {
+            margin: 0.5rem 0 1rem 1.5rem;
+        }
+        li { margin-bottom: 0.6rem; }
+        a { color: #8B6914; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .notice {
+            background: #fdf8ee;
+            border: 1px solid #e8d8a0;
+            border-radius: 8px;
+            padding: 1rem 1.2rem;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+        .step-block {
+            background: #f4f4f4;
+            border-radius: 8px;
+            padding: 1rem 1.2rem;
+            margin-bottom: 1rem;
+        }
+        .step-block strong {
+            display: block;
+            margin-bottom: 0.4rem;
+            color: #1a1a1a;
+        }
+        footer {
+            margin-top: 2.5rem;
+            font-size: 0.8rem;
+            color: #999;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <h1>Radera konto och data</h1>
+    <p class="subtitle">Bibel '15 &middot; KJS Software</p>
+
+    <div class="notice">
+        Bibel '15 skapar inga egna konton. Appen använder Google Sign-In (valfritt) för
+        att koppla din backup till ditt Google-konto. Nedanstående steg visar hur du
+        kopplar bort appen och raderar all tillhörande data.
+    </div>
+
+    <h2>Vad raderas?</h2>
+    <ul>
+        <li><strong>Lokal data på enheten</strong> – raderas när du avinstallerar appen.</li>
+        <li><strong>Google Drive-backup</strong> – en JSON-fil lagrad i appens privata mapp
+            på Google Drive (<em>appDataFolder</em>). Den raderas inte automatiskt vid avinstallation
+            och måste tas bort manuellt enligt instruktionerna nedan.</li>
+        <li><strong>Google-kontokoppling</strong> – appens åtkomst till ditt Google-konto
+            kan återkallas via Googles kontoinställningar.</li>
+    </ul>
+
+    <h2>Steg 1 – Logga ut i appen</h2>
+    <div class="step-block">
+        <strong>Gör så här:</strong>
+        Öppna Bibel '15 → <em>Inställningar</em> → <em>Google Drive-backup</em> → tryck på
+        <em>Logga ut</em>. Detta tar bort lokalt cachade inloggningsuppgifter från enheten.
+    </div>
+
+    <h2>Steg 2 – Radera backup-filen från Google Drive</h2>
+    <div class="step-block">
+        <strong>Gör så här:</strong>
+        <ol>
+            <li>Gå till
+                <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">
+                    myaccount.google.com/permissions
+                </a>
+            </li>
+            <li>Leta upp <strong>Bibel '15</strong> i listan.</li>
+            <li>Klicka på appen och välj <em>Ta bort åtkomst</em>.</li>
+        </ol>
+        Detta återkallar appens tillstånd och raderar backup-filen från din
+        privata app-mapp på Google Drive.
+    </div>
+
+    <h2>Steg 3 – Avinstallera appen (valfritt)</h2>
+    <div class="step-block">
+        <strong>Gör så här:</strong>
+        Håll in appikonen på din Android-enhet → välj <em>Avinstallera</em>.
+        All lokal data (markeringar, anteckningar, inställningar) raderas permanent.
+    </div>
+
+    <h2>Lagringsperioder</h2>
+    <p>
+        KJS Software lagrar ingen data på egna servrar. Den enda externa lagringen är
+        den valfria backup-filen på ditt personliga Google Drive-konto, som du äger och
+        kontrollerar helt.
+    </p>
+    <p>
+        När åtkomsten återkallas enligt Steg 2 ovan raderas backup-filen omedelbart.
+        Lokal data på enheten raderas när appen avinstalleras.
+    </p>
+
+    <h2>Kontakt</h2>
+    <p>
+        Frågor eller begäran om hjälp med radering skickas till:<br>
+        <a href="mailto:kjssoftware@proton.me">kjssoftware@proton.me</a>
+    </p>
+
+</div>
+<footer>
+    &copy; 2026 KJS Software. Alla rättigheter förbehållna.
+</footer>
+</body>
+</html>
